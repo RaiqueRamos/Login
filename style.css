@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+#BoxMain{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#BoxAuth{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+#BoxAuth-1{
+    width: 294px;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.BoxFL{
+    width: 100%;
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #000;
+}
+.BoxE{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f2f2;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px rgb(87, 87, 87);
+}
+.oi{
+    width: 3px;
+    height: 42px;
+    background: #0000ae;
+}
+.BoxEI{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #0000ae;
+    cursor: pointer;
+    text-decoration: none;
+}
+#Email{
+    width: 100%;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f3f2f2;
+}
+#Nome{
+    width: 100%;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f3f2f2;
+}
+#Senha{
+    width: 100%;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f3f2f2;
+}
+#CorfirmSenha{
+    width: 100%;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f3f2f2;
+}
+.BoxS{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f2f2;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px rgb(87, 87, 87);
+}
+.BoxEMS{
+    width: 100%;
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #0918EC;
+    font-weight: 600;
+}
+p{
+    cursor: pointer;
+}
+.BoxEMS::before{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-right: 16px;
+}
+.BoxEMS::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-left: 16px;
+}
+.BoxBtn{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 7px;
+    border: none;
+    background-color: #0918EC;
+    color: white;
+    cursor: pointer;
+}
+.BoxCDS{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: bolder;
+    color: #0918EC;
+}
+span{
+    height: 4px;
+}
+.Ep{
+    height: 30px;
+}
+#msgError{
+    width: 236px;
+    height: 45px;
+    background-color: #3F3843;
+    position: absolute;
+    bottom: 640px;
+    display: none;
+    justify-content: space-between;
+    align-items:  center;
+    animation: Error 3s alternate;
+}
+@keyframes Error {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(70px);
+    }
+    70%{
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.boxError{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:  center;
+}
+.decError{
+    width: 5px;
+    height: 100%;
+    background-color: #FEB2B2;
+}
+.textError{
+    color: white;
+    margin-left: 30px;
+}
+#msgSuccess{
+    width: 290px;
+    height: 45px;
+    background-color: #2F4042;
+    position: absolute;
+    bottom: 640px;
+    display: none;
+    justify-content: space-between;
+    align-items:  center;
+    animation: Success 3s alternate;
+}
+@keyframes Success {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(70px);
+    }
+    70%{
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.boxSuccess{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.decSuccess{
+    width: 5px;
+    height: 100%;
+    background-color: #9AE6B4;
+}
+.textSuccess{
+    color: white;
+    margin-left: 30px;
+}
