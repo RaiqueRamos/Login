@@ -16,6 +16,17 @@ Nome.addEventListener('keyup', ()=>{
         validNome = true;
     }
 });
+
+Email.addEventListener('keyup', ()=>{
+    if(Email.value.length <= 5){
+        Email.setAttribute('style', 'color: red')
+        validEmail = false;
+    }else{
+        Email.setAttribute('style', 'color: black')
+        validEmail = true;
+    }
+});
+
 Senha.addEventListener('keyup', ()=>{
     if(Senha.value.length <= 5){
         Senha.setAttribute('style', 'color: red')
@@ -41,10 +52,24 @@ let msgSuccess = document.querySelector('#msgSuccess');
 
 function Cadastrar(){
     if(validNome && validSenha && validCorfirmSenha){
+        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+
+        listaUser.push({
+            NomeCad: Nome.value,
+            EmailCad: Email.value,
+            SenhaCad: Senha.value,
+        })
+
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
         msgSuccess.setAttribute('style', 'display: flex');
-        msgError.setAttribute('style', 'display: none');
+
+        setTimeout(()=>{
+            window.location.href = 'file:///D:/NavBar/Logar.html';
+        }, 2000)
+
+        
     }else{
         msgError.setAttribute('style', 'display: flex');
-        msgSuccess.setAttribute('style', 'display: none');
     }
 }

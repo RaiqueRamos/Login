@@ -211,9 +211,6 @@ span{
     50%{
         transform: translateY(70px);
     }
-    70%{
-        transform: translateY(-40px);
-    }
     100% {
         transform: translateY(0px);
     }
